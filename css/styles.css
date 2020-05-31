@@ -38,7 +38,7 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --ff-primary: "Lato", sans-serif;
+  --ff-primary: "Rubik", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.15rem;
   --radius: 0.5rem;
@@ -181,7 +181,7 @@ Hero
 
 */
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   background: var(--clr-primary-5);
   display: flex;
   justify-content: center;
@@ -353,6 +353,19 @@ Featured Tours
   height: 15rem;
   object-fit: cover;
 }
+.tour-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tour-title h4,
+.tour-title p {
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+.tour-title p {
+  color: var(--clr-grey-7);
+}
 .tour-date {
   position: absolute;
   right: 0;
@@ -366,6 +379,7 @@ Featured Tours
 .tour-info {
   padding: 1.25rem 1.5rem;
 }
+
 .tour-footer {
   display: flex;
   justify-content: space-between;
