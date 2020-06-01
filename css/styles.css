@@ -58,7 +58,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-primary);
-  background: black;
+
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -286,7 +286,11 @@ Services
 ===============
 */
 .services {
-  background: black;
+  background: linear-gradient(
+    90deg,
+    rgba(35, 37, 38, 1) 0%,
+    rgba(65, 67, 69, 1) 97%
+  );
 }
 .service {
   text-align: center;
@@ -319,7 +323,7 @@ Services
 
 @media screen and (min-width: 992px) {
   .service {
-    flex: 0 0 calc(33.333% - 1rem);
+    flex: 0 0 calc(25% - 1rem);
   }
 }
 
@@ -348,10 +352,10 @@ Featured Tours
   background: var(--clr-grey-10);
   margin-bottom: 2rem;
 }
-.tour-card:hover {
+/* .tour-card:hover {
   box-shadow: black;
   transform: scale(1.02);
-}
+} */
 .tour-img-container {
   position: relative;
 }
@@ -539,3 +543,45 @@ Gallery
 Footer
 ===============
 */
+
+.footer {
+  background: linear-gradient(
+    90deg,
+    rgba(35, 37, 38, 1) 0%,
+    rgba(65, 67, 69, 1) 97%
+  );
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.footer-links,
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-link {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-right: 1rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+.footer-link:hover {
+  color: var(--clr-primary-5);
+}
+.footer-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--clr-primary-8);
+}
+.footer-icon:hover {
+  color: var(--clr-primary-5);
+}
+.copyright {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: white;
+}
