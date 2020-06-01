@@ -369,21 +369,6 @@ About
     opacity: 1;
   }
 }
-.about-info {
-  animation: fadeInLeft ease 6s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-20px);
-  }
-}
 
 /*
 .about-img::before {
